@@ -1,0 +1,8 @@
+.bg-trans{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 900px) {
+    .bg-trans{
+        border-radius: 50px;
+    }
+}
