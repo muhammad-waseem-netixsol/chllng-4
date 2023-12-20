@@ -18,7 +18,7 @@ const CARD_DETAILS = [{
 const Cards = () => {
     return (
         <div style={{ fontFamily: 'Mona Sans, sans-serif' }} className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between items-stretch p-5 my-20 rounded-3xl gap-5 md:gap-10 md:w-[95%] mx-auto flex-col  sm:flex-row w-full'>
-            {CARD_DETAILS.map((card, i) => <div className={`flex flex-1 justify-between gap-8 p-5 flex-col border rounded-xl cursor-pointer hover:bg-slate-100 hover:shadow-xl py-5`} data-aos="fade-right">
+            {CARD_DETAILS.map((card, i) => <div className={`flex flex-1 justify-between shadow gap-8 p-5 flex-col border rounded-xl cursor-pointer hover:bg-slate-100 hover:shadow-xl py-5`} data-aos="fade-right">
                 <div><img className='h-[64px] w-[64px]' src={`${card.img}`} alt="" /></div>
                 <div className='font-medium py-5'>{card.year}<span className='text-base font-normal text-gray-700'>/ case study</span></div>
                 <h3 className='font-bold text-3xl'>{card.heading}</h3>
