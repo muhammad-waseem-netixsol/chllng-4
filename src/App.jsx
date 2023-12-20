@@ -36,12 +36,12 @@ fetchAllProducts()
 const onclose = () => {
   setOpen(false);
 };
-  return (
-    <div className='container mx-auto font-mona'>
+  return(<>
+    {modal && <Modal />}
+    <div className='container mx-auto font-mona relative 2xl:overflow-hidden'>
       <TopWrapper open={open} closeWrapper={onclose} />
       <Background />
       <Main showTop={showTopWrapper}/>
-      {modal && <Modal />}
       <Badge />
       <Cards />
       <Quote />
@@ -50,6 +50,7 @@ const onclose = () => {
       </Suspense>
       <Footer />
     </div>
+    </>
   )
 }
 
