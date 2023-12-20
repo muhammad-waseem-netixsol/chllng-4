@@ -8,6 +8,8 @@ const useProductStore = create((set) => ({
   totalPages: 0,
   itemsPerPage: 6,
   cart: [],
+  cartLength:0,
+  
     modal:false,
   fetchAllProducts: async () => {
     try {
@@ -19,6 +21,7 @@ const useProductStore = create((set) => ({
       
     }
   },
+  setCartLength:(length) => {set((state) => ({cartLength:length}))},
   showModal: (status) => {set(state => ({modal: status}))}
   ,
   addToCart: (productId) => {
