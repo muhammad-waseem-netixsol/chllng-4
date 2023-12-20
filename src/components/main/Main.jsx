@@ -8,7 +8,7 @@ const Main = (props) => {
         props.showTop(true);
     }
     return (
-        <div className='bg-white rounded-3xl my-1 p-3 min-h-screen md:h-screen flex flex-col justify-between 3xl:justify-start 3xl:gap-10 pb-28 xl:h-[800px]'>
+        <div className='bg-white rounded-3xl my-1 p-3 min-h-screen md:h-screen flex flex-col justify-between 2xl:justify-start 2xl:gap-64 pb-28 xl:h-[800px]'>
             <Navbar handleTop={topBarHandler}/> 
             <div className='flex-col bg-trans z-20 justify-evenly items-center sm:w-[60%] xl:w-[50%]' data-aos="zoom-in-up">
             <div className='font-semibold text-start py-5 text-3xl md:text-5xl lg:text-7xl z-10' style={{ fontFamily: 'Mona Sans, sans-serif' }}>Award-winning development studio based in Denmark.</div>
